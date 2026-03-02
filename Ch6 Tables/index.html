@@ -31,9 +31,7 @@
     <figure>
       <img
         src="images/Budapest.jpg"
-        alt="Parliamnet Building at night, Budapest"
-        width="400"
-        height="300" />
+        alt="Parliamnet Building at night, Budapest" />
       <br />
       <figcaption>Palace of Parliament, Budapest</figcaption>
     </figure>
@@ -42,8 +40,8 @@
       <img
         src="images/SwissAlps.jpg"
         alt="Alps in Switzerland"
-        width="400"
-        height="300" />
+        width="1612"
+        height="960" />
       <br />
       <figcaption>Wengen, Switzerland</figcaption>
     </figure>
@@ -52,8 +50,8 @@
       <img
         src="images/Zermatt.jpg"
         alt="Zermatt, Switzerland"
-        width="400"
-        height="300" />
+        width="1612"
+        height="960" />
       <br />
       <figcaption>Zermatt, Switzerland</figcaption>
     </figure>
@@ -77,8 +75,8 @@
       <img
         src="images/Cows.jpg"
         alt="Cows grazing in open fields of Switzerland"
-        width="400"
-        height="300" />
+        width="800"
+        height="600" />
       <br />
       <figcaption>
         Cows in open grasslands of Switzerland. I love the sound of their
@@ -112,8 +110,8 @@
         <img
           src="images/Enigma.jpg"
           alt="Poster of the movie Enigma"
-          width="200"
-          height="300"
+          width="400"
+          height="600"
       /></a>
     </figure>
     <br />
@@ -124,33 +122,42 @@
 
     <p>
       Down below is a small table of what I do Monday through Wednesday between
-      the hours of 12pm and 5pm
+      the hours of 12pm and 5pm.
 
       <!-- you can use the example on page 134 as your main layout, just be sure to add a bit more to the code to make our table here complete -->
     </p>
 
-    <table border="1">
+    <table
+      border="1"
+      bordercolor="white"
+      bgcolor="lightgray"
+      cellspacing="0"
+      cellpadding="5">
       <tr>
-        <th>Day</th>
-        <th>Time</th>
-        <th>Activity</th>
+        <th scope="colgroup" bgcolor="#008010">Day</th>
+        <th scope="col" bgcolor="#808080">12pm</th>
+        <th scope="col" bgcolor="#808080">1pm</th>
+        <th scope="col" bgcolor="#808080">2pm</th>
+        <th scope="col" bgcolor="#808080">3pm</th>
+        <th scope="col" bgcolor="#808080">4pm</th>
+        <th scope="col" bgcolor="#808080">5pm</th>
       </tr>
       <tr>
-        <td>Monday</td>
-        <td>12pm - 5pm</td>
-        <td>Work on WebDev assignments!</td>
+        <th bgcolor="#808000">Monday</th>
+        <td rowspan="3">Lunch</td>
+        <td colspan="5">Work on UX Project</td>
       </tr>
       <tr>
-        <td>Tuesday</td>
-        <td>12pm - 5pm</td>
-        <td>Go for a hike around the Bay Area!</td>
+        <th bgcolor="#908000">Tuesday</th>
+        <td colspan="4">Web Development Assignments</td>
+        <td>Pilates</td>
       </tr>
       <tr>
-        <td>Wednesday</td>
-        <td>12pm - 5pm</td>
-        <td>Go to class and learn new things!</td>
+        <th bgcolor="#908059">Wednesday</th>
+        <td colspan="2">Photography Projects</td>
+        <td colspan="2">Hybrid Tutoring</td>
+        <td>Hike</td>
       </tr>
-      <br />
     </table>
     <br />
     <p><a href="#top">Back to the Top</a></p>
