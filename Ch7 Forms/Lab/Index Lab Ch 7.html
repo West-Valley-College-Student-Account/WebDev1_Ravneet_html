@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 7 FORMS</title>
+  </head>
+  <body>
+    <h1>Chapter 7: Forms</h1>
+    <br />
+
+    <form action="http://wwww.example.com/lohin.php" method="post">
+      <p>
+        Username:<input
+          type="text"
+          name="username"
+          size="20"
+          maxlength="30"
+          placeholder="Enter username"
+          required="required"
+          title="Username is required" />
+      </p>
+
+      <p>
+        Password:<input
+          type="password"
+          name="password"
+          size="20"
+          maxlength="30"
+          placeholder="20 min to 30 max"
+          required="required"
+          title="Password is required" />
+
+        <input type="submit" value="Login" />
+      </p>
+      <br />
+      <p>What did you think of this gig?</p>
+      <textarea
+        name="comments"
+        cols="40"
+        rows="5"
+        placeholder="Enter your comments here..."></textarea>
+
+      <br />
+      <br />
+      <p>
+        What is your favorite music genre? <br /><br />
+        <input type="radio" name="genere" value="rock" checked="checked" /> Rock
+        <br />
+        <input type="radio" name="genere" value="pop" /> Pop <br />
+        <input type="radio" name="genere" value="hiphop" /> Hip-Hop <br />
+        <input type="radio" name="genere" value="country" /> Country <br />
+        <input type="radio" name="genere" value="jazz" /> Jazz
+      </p>
+      <br />
+      <p>
+        Please select your favorite music service(s)<br /><br />
+        <input
+          type="checkbox"
+          name="service"
+          value="spotify"
+          checked="checked" />
+        Spotify<br />
+        <input type="checkbox" name="service" value="applemusic" /> Apple Music
+        <br />
+        <input type="checkbox" name="service" value="tidal" /> Tidal <br />
+        <input type="checkbox" name="service" value="amazonmusic" /> Amazon
+        Music <br />
+        <input type="checkbox" name="service" value="youtube" /> YouTube Music
+      </p>
+      <br />
+      <p>
+        Which devices do you use to listen to music? <br /><br />
+        <select name="devices">
+          <option value="smartphone">Smartphone</option>
+          <option value="tablet">Tablet</option>
+          <option value="laptop">Laptop</option>
+          <option value="other">Other</option>
+        </select>
+      </p>
+      <br />
+      <form action="http://wwww.example.com/lohin.php" method="post">
+        <p>
+          Upload your song in MP3 format: <br /><br />
+          <input type="file" name="user-song" /> <br /><br />
+          <input type="submit" value="Upload" />
+        </p>
+      </form>
+      <br />
+      <p>
+        Subscribe to our newsletter: <br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address" />
+
+        <input type="submit" name="subscribe" value="Subscribe" />
+      </p>
+
+      <p>
+        You can bookmark this page:
+        <button>Bookmark Me</button>
+        <input type="hidden" name="bookmark" value="lyrics" /><br /><br />
+        <br />
+        Let us about yourself: <br /><br />
+        <label>Age: <input type="text" name="age" /></label> <br /><br />
+        Gender: <input id="female" type="radio" name="gender" value="f" />
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m" />
+        <label for="male">Male</label>
+      </p>
+      <br />
+      <fieldset>
+        <legend>Contact Details</legend>
+        <br />
+        <label>Email: <input type="email" name="email" /> <br /> </label>
+        <br />
+        <label>Phone: <input type="phone" name="phone" /> </label><br />
+        <br />
+        <label>Website: <input type="url" name="website" /> </label><br /><br />
+
+        <br />
+      </fieldset>
+      <br />
+      <label for="surveyDate">Survey Date:</label>
+      <input type="date" name="surveyDate" />
+      <input type="submit" value="Submit" /> <br />
+      <br />
+      <p>
+        Search Music:
+        <input type="search" name="Search" placeholder="Enter keyword" />
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </body>
+</html>
