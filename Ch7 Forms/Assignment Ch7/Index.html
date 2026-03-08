@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment CH7 FORMS</title>
+  </head>
+  <body>
+    <br />
+    <h1>Hi, Welcome to WVC</h1>
+    <br />
+    <h3>Log in first to get the best use out of this site:</h3>
+
+    <!-- use the <input> tag as seen on page 153 to get it going, then be sure to use the "placeholder" attribute as seen on page 168-->
+
+    <form action="http://wwww.example.com/login.php" method="post">
+      <p>
+        Username:<input
+          type="text"
+          name="username"
+          size="15"
+          maxlength="30"
+          placeholder="Enter Username"
+          required="required" />
+      </p>
+      <!-- use form validation as seen on page 165 -->
+      <p>
+        Password:<input
+          type="password"
+          name="password"
+          size="15"
+          maxlength="30"
+          placeholder="Enter Password"
+          required="required" />
+
+        <!-- add a <button>  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>-->
+
+        <button>Submit</button>
+      </p>
+    </form>
+    <br />
+
+    <!-- insert image of a generic college using the <img> tag as done in previous assignment  - grab image from “unsplash” (be sure to create your "images" folder in the root directory of your assignment's folder) and resize the image using width="600"
+        height="450"  basically use exact code found on page 100 -->
+
+    <img
+      src="images/WVC_Ravneet.jpg"
+      alt="WVC College Image"
+      width="600"
+      height="450" />
+    <br />
+    <h2>About the School</h2>
+    <p>
+      <b
+        >We are the best at what we do! From the arts to the sciences, we've got
+        you covered. Here you will find all the information you need:
+      </b>
+    </p>
+    <b>
+      <a href="https://www.westvalley.edu/classes/offerings.html"
+        >Course List</a
+      > </b
+    ><br /><br />
+    <b>
+      <a href="https://www.westvalley.edu/admissions/registration/"
+        >How to Sign-up for Classes</a
+      > </b
+    ><br /><br />
+    <b>
+      <a href="https://www.westvalley.edu/centers/">Resource Centers</a><br />
+      <br /></b
+    ><b> <a href="https://www.westvalley.edu/faculty">Faculty List</a> </b
+    ><br /><br />
+    <b>
+      <a href="https://www.westvalley.edu/maps/">Campus Map</a>
+    </b>
+    <br /><br />
+    Still need more information? No worries! Feel free to use our search bar
+    below!
+    <!-- insert search bar – as seen on page 168, you can use exact code -->
+
+    <!--  insert button  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>-->
+    <form action="http://wwww.example.com/search.php" method="post">
+      <p>
+        <b>Search WVC:</b>
+        <input type="search" name="Search" placeholder="Enter keyword" />
+        <button>Submit</button>
+      </p>
+    </form>
+    <br />
+    <h2>Join our Mailing list!</h2>
+    <form action="http://wwww.example.com/profile.php" method="post">
+      <p>
+        If you join our mailing list, you will get exclusive information
+        regarding upcoming events, assignments, and well... more events! Be the
+        first to be “in the know”. We promise not to spam you. <em>Really.</em>
+        <!-- emphasize “really” -->
+      </p>
+      <!-- insert mailing list – use exact code on page 167, found within the top two boxes – instead of using <input type=”submit”> for a button, please use the actual <button> tag for the next part below -->
+
+      <!-- insert <button> tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>  -->
+      <p>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address" />
+        <button>Submit</button>
+      </p>
+    </form>
+    <br />
+
+    <h3>
+      What kind of music applications do you like using while studying or on the
+      go?
+    </h3>
+    <!--  insert a “checkbox”  which looks like this:   <input type=”checkbox”>  You can use the exact example/code  on page 156 in your book  -->
+    <form action="http://wwww.example.com/profile.php">
+      <p>
+        You can choose more than one music streaming application: <br /><br />
+        <input
+          type="checkbox"
+          name="service"
+          value="spotify"
+          checked="checked" />
+        Spotify<br />
+        <input type="checkbox" name="service" value="applemusic" /> Apple Music
+        <br />
+        <input type="checkbox" name="service" value="tidal" /> Tidal <br />
+        <input type="checkbox" name="service" value="amazonmusic" /> Amazon
+        Music <br />
+        <input type="checkbox" name="service" value="youtube" /> YouTube Music
+      </p>
+    </form>
+
+    <h3>Favorite style of music?</h3>
+    <!--  use the radio buttons, exactly as it is written on page 155-->
+    <form action="http://wwww.example.com/profile.php">
+      <p>
+        <input type="radio" name="genere" value="rock" checked="checked" /> Rock
+        <br />
+        <input type="radio" name="genere" value="pop" /> Pop <br />
+        <input type="radio" name="genere" value="hiphop" /> Hip-Hop <br />
+        <input type="radio" name="genere" value="country" /> Country <br />
+        <input type="radio" name="genere" value="jazz" /> Jazz
+      </p>
+    </form>
+
+    <h3>Are you a MacOS, Windows, or Linux user?</h3>
+    <!--  insert a Drop Down List Box - you can use the exact code on page 157, just change the working from ipad, radio, computer to “Windows, MacOS, Linux” -->
+    <form action="http://wwww.example.com/profile.php">
+      <p>
+        As you browse the internet, which kind of computer OS are you using?
+      </p>
+      <select name="devices">
+        <option value="windows">Windows</option>
+        <option value="macos">MacOS</option>
+        <option value="linux">Linux</option>
+      </select>
+    </form>
+
+    <h3>Add an image for your profile!</h3>
+    <!--  insert image of self or  if you don't want to use a picture of yourself, use a generic image of a college student from “unsplash” and resize the image using height=”600” width=”600”  use similar code found on page 100-->
+    <img
+      src="images/AdobeStock_251488929.jpeg"
+      alt="Student Image"
+      width="600"
+      height="600" />
+
+    <!--  add file input box – same code on page 159 works-->
+
+    <form action="http://wwww.example.com/lohin.php" method="post">
+      <p>Upload your image in JPEG format:</p>
+      <input type="file" name="user-image" /> <br /><br />
+      <input type="submit" value="Upload" />
+    </form>
+    <br />
+
+    <h3>Contact?</h3>
+    <p>Please use the form below:</p>
+    <!-- use the exact code from page 164 in your book – make sure to change the 3 titles to “First Name” “Last Name” and “Email” -->
+    <fieldset>
+      <legend>Contact Details</legend>
+      <br />
+      <label
+        >First Name: <br /><input type="text" name="firstname" /> <br /> </label
+      ><br />
+      <label
+        >Last Name: <br /><input type="text" name="lastname" /> <br /> </label
+      ><br />
+      <label>Email: <br /><input type="email" name="email" /> <br /> </label
+      ><br />
+    </fieldset>
+    <br />
+
+    <p><b>Set a date when you can visit the campus! </b></p>
+    <!--  use the exact code found on page 166 -->
+
+    <form action="http://wwww.example.com/bookings.php" method="post">
+      <label for="visitDate">Campus Visit Date:</label>
+      <input type="date" name="visitDate" />
+      <input type="submit" value="Submit" /> <br /><br />
+    </form>
+    <hr />
+    <p>
+      <i>GDES 021A Web Development | Assignment Ch7: Forms | Ravneet Mavi</i>
+    </p>
+  </body>
+</html>
