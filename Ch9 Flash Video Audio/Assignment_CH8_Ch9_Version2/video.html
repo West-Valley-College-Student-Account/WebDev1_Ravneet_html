@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CH 9 Video Audio</title>
+  </head>
+  <body>
+    <!-- ASSIGNMENT (Ch8 + CH9), PART 2: VIDEO+AUDIO -->
+    <div style="border: 8px solid black" padding="20px">
+      <br />
+      <h1>
+        Street Fighter goes to... Hawaii!?
+        <style>
+          h1 {
+            color: rgb(255, 111, 0);
+            font-family: "Arial Black", Gadget, sans-serif;
+            text-shadow: 2px 2px 5px rgb(0, 0, 0);
+            padding: 10px;
+          }
+        </style>
+      </h1>
+
+      <p>
+        Check out this video where Guile's theme is played on the ukulele. If
+        you prefer not to watch the video, then you can just listen to it too!
+        <style>
+          p {
+            font-family: "Arial Bold", Helvetica, sans-serif;
+            padding: 10px;
+          }
+        </style>
+      </p>
+
+      <!--insert video tag with poster attribute on it while having a source tag nested inside of it - code is somewhat similar to page 215 or use EXACT code from lecture video -->
+
+      <video
+        controls
+        poster="PosterGuileUkulele.jpg"
+        width="600"
+        height="350"
+        preload
+        loop>
+        <source src="StreetFighter2Ukulele.mp4" type="video/mp4" />
+      </video>
+
+      <br />
+
+      <!--insert audio tag with a source tag nested inside of it - code is somewhat similar to page 220 or use EXACT code from lecture video -->
+      <br /><br />
+      <span
+        style="
+          font-family:
+            Arial Bold,
+            Helvetica,
+            sans-serif;
+          padding-left: 10px;
+        "
+        >Here is the same track but as audio only!</span
+      >
+
+      <audio controls>
+        <source src="StreetFighter2Theme.mp3" type="audio/mpeg" />
+      </audio>
+
+      <br /><br />
+
+      <div style="border: 8px solid gold" padding="20px">
+        <br />
+        <a href="index.html"
+          >Well that's enough music for now. Let's go back to the Home Page!
+
+          <style>
+            a {
+              font-family: "Arial Bold", Gadget, sans-serif;
+              padding: 10px;
+            }
+          </style></a
+        >
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>
