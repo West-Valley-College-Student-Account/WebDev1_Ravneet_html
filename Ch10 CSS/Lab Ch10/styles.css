@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: rgb(6, 104, 35);
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(7, 157, 10);
+  font-size: 20px;
+}
+
+li > a {
+  color: rgb(48, 161, 63);
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifs;
+}
+
+p a {
+  color: rgb(224, 8, 48);
+  font-size: 16px;
+}
+
+.clouds {
+  color: royalblue;
+}
+
+#cars {
+  color: rgb(102, 0, 255);
+  font-size: 16px;
+}
+
+span,
+h3,
+h4 {
+  color: rgb(250, 137, 156);
+  font-size: 30px;
+}
+
+h3.heading {
+  color: rgb(231, 231, 44);
+}
+
+#H5TagWithID {
+  color: rgb(108, 176, 249);
+  font-size: 50px;
+}

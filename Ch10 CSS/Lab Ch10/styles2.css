@@ -1,0 +1,9 @@
+.div1 {
+  color: rgb(166, 120, 223);
+  font-size: 30px;
+  border: 6px solid plum;
+}
+
+h1 {
+  border: inherit;
+}
