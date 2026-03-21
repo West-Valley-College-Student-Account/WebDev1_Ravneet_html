@@ -1,0 +1,259 @@
+/* In your CSS file, please import text as seen in the chapter 12 lecture video and apply it to your CSS file at the very top -  - below it, use the box-sizing hack which looks like this:
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+    */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* use any font you'd like! Also... make sure ALL of your HTML documents are linked to the CSS file!  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+/* write this in your CSS on the <nav> tag, <li> tag, and <a> tags :
+
+nav {
+    text-align: center;
+    margin-bottom: 75px;
+   font-size: 25px;
+}
+
+li {
+display: inline;
+margin: 10px;
+}
+
+a {
+    text-decoration: none;
+} 
+    
+ ADD THIS NEW NAV CODE  ABOVE TO ALL OF YOUR .html PAGES! :) */
+
+nav {
+  text-align: center;
+  margin-bottom: 75px;
+  font-size: 25px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* For the code below... Use this exact code in your CSS file but change the colors to your liking:
+a:link {
+color: deeppink;
+text-decoration: none;
+
+}
+a:visited {
+color: gray;
+
+}
+a:hover {
+color: deeppink;
+text-decoration: underline;
+
+}
+a:active {
+color: darkcyan;
+
+}
+ */
+
+a:link {
+  color: rgb(234, 119, 180);
+  text-decoration: none;
+}
+a:visited {
+  color: rgba(149, 151, 204, 0.613);
+}
+a:hover {
+  color: rgb(234, 119, 180);
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(53, 22, 101);
+}
+
+/* Do font size 50px  on regular browser size (normal CSS writing) --- for the next sizes, use @media queries--- iPad 40px (media query begins on this one and will have two values like this: @media (min-width: 481px) and (max-width: 768px) and then do a @media query for Mobile with 25px, that will be  @media (max-width: 480px)  have these media queries ready to go, since you will add new settings into them later as you move on the assignment
+
+Also style your h1's border exactly like this (but feel free to change colors, border thickness, and border-radius) 
+h1 {
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+} 
+
+    REMOVE line breaks aka <br /> tags  and instead adding margin-bottom: 5%; to your h1 in CSS*/
+
+h1 {
+  font-size: 50px;
+  border-top: 5px solid whitesmoke;
+  border-bottom: 5px solid whitesmoke;
+  padding: 20px;
+  text-align: center;
+  margin: 5% 20%;
+  border-radius: 10px;
+  color: white;
+  background-color: rgba(149, 151, 204, 0.613);
+  /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+  margin-bottom: 5%;
+}
+
+/* make the <img> centered on your image on the page by using this in your CSS on it:
+
+display: block;
+margin: auto;
+box-shadow: 5px 5px 5px 5px #777777;
+and for overall image size, make the image roughly around 600px regular screen size, then media queries at 400px for iPad, and 250px for mobile - choose the widths and height that make it look best by experimenting with it  */
+
+img {
+  display: block;
+  margin: auto;
+  box-shadow: 5px 5px 5px 5px #777777;
+  width: 600px;
+}
+
+/* div that has padding of 20px and that has a height and width of 400px regular computer screen size, then media query at 350px for iPad and 275px for mobile  and style your div like this:
+
+text-align: center;
+border-radius: 10px 60px;
+margin-bottom: 20px;
+background-color:  YOUR CHOICE; 
+
+make this font 20px regular screen size, media query at 15px iPad, and 12px mobile and make sure to text-align: center;) */
+
+div {
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px 60px;
+  margin-bottom: 20px;
+  background-color: rgba(200, 173, 218, 0.702);
+  font-size: 20px;
+  /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+  color: white;
+}
+
+/* HTML 
+   CSS
+
+turn these above into a list - add a "class" to your list so it doesn't interfere with your nav bar list at the top of your page -- doesn't need to be clickable - and add this CSS to your <ul> of list-style-type: none; */
+
+.custom-list {
+  list-style-type: none;
+  font-size: larger;
+}
+
+/* media query for handling iPad */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(149, 151, 204, 0.613);
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    margin-bottom: 5%;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+    width: 400px;
+  }
+
+  div {
+    padding: 20px;
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px 60px;
+    margin-bottom: 20px;
+    background-color: rgba(200, 173, 218, 0.702);
+    font-size: 15px;
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    color: white;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    font-size: larger;
+  }
+}
+
+/* media query for handling Mobile  */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(149, 151, 204, 0.613);
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    margin-bottom: 5%;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #777777;
+    width: 250px;
+  }
+
+  div {
+    padding: 20px;
+    height: 275px;
+    width: 275px;
+    text-align: center;
+    border-radius: 10px 60px;
+    margin-bottom: 20px;
+    background-color: rgba(200, 173, 218, 0.702);
+    font-size: 12px;
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
+    color: white;
+  }
+
+  .custom-list {
+    list-style-type: none;
+    font-size: larger;
+  }
+}
+
+/* h3 is used in About Me and Contact pages only */
+
+h3 {
+  font-size: 2.25rem;
+  text-shadow: 4px 4px 8px rgb(93, 90, 90);
+  color: white;
+}

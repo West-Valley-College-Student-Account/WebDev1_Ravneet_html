@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style type="text/css">
+      body {
+        background-color: rgba(88, 93, 182, 0.171);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <li><a href="#">Home</a></li>
+      <li><a href="aboutme.html" target="_blank">About Me</a></li>
+      <li><a href="contact.html" target="_blank">Contact</a></li>
+    </nav>
+
+    <!-- info above should be in a list but now wrap it in a <nav></nav> tag instead of a <ul></ul> tag and turn the wording into anchor tags -->
+
+    <h1>My name is Ravneet Mavi and I'm your next Web Developer.</h1>
+
+    <!-- treat the info above as an h1 -->
+
+    <!-- add an image of yourself here - or an image of what you would like to represent you for now, like a brand or simple logo, or just a generic unsplash picture -->
+
+    <img src="images/WebDeveloper.jpeg" alt="Web Developer Girl" />
+
+    <!-- put this information below in a div-->
+
+    <div>
+      <p>All of this amazing styling is purly using:</p>
+
+      <ul class="custom-list">
+        <li>
+          <a href="https://share.google/1aFlEKNSGpH4TgzL8" target="_blank"
+            >HTML</a
+          >
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
+        </li>
+      </ul>
+
+      <!-- turn these above into a list - add a "class" to your list so it doesn't interfere with your nav bar list at the top of your page -- doesn't need to be clickable -->
+
+      <p>
+        Here is a link to my github profile:
+        <a href="https://github.com/rmavi" target="_blank">rmavi</a>
+      </p>
+
+      <!-- add link here - if no link, the just make up clickable link as a place holder for now -->
+
+      <p>
+        Right now, I'm currently studying UX and Graphic Design but I also enjoy
+        travel!
+      </p>
+
+      <p>
+        If you would like to learn more about me,
+        <a href="aboutme.html">click here</a>!
+      </p>
+
+      <p>Want to follow more of what I do? Then join the mailing list!</p>
+
+      <!-- use exact code found on page 160 -->
+
+      <form action="http://www.example.com/subscribe.php">
+        <!-- Subscribe to the mailing list: -->
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe" value="Join" />
+      </form>
+    </div>
+  </body>
+</html>
