@@ -1,0 +1,46 @@
+ul {
+  border: 2px solid plum;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+.coming-soon {
+  display: none;
+}
+
+div {
+  padding: 0px;
+  background-color: rgb(55, 53, 53);
+  box-shadow: 5px 5px 5px 5px #777777;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  color: rgb(146, 136, 207);
+  border-top: 5px solid rgb(70, 55, 185);
+  border-bottom: 5px solid rgb(229, 139, 221);
+  padding: 15px 1px;
+  text-align: center;
+  /* border-style: outset; */
+  margin: 0 20%;
+  border-radius: 20px;
+}
+
+.one {
+  width: 150px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.two {
+  width: 150px;
+  height: 200px;
+  overflow: scroll;
+}
