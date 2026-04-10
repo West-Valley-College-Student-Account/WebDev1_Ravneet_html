@@ -1,0 +1,13 @@
+#garden {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.plot {
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgb(57, 25, 25);
+  background-color: rgb(171, 107, 19);
+  text-align: center;
+  padding: px;
+}
