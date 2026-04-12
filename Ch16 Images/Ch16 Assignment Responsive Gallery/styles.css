@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+  color: white;
+  width: 450px;
+  border: 1px solid rgb(121, 118, 118);
+  background-color: rgba(144, 143, 143, 0.5);
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-shadow: 1px 1px 1px black;
+}
+
+body {
+  background: url("images/SwissAlps.jpg") no-repeat fixed center center;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 4px;
+  border-radius: 10px;
+}
+
+.div1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 25px;
+}
+
+.div1 a {
+  flex: 0 0 calc(30% - 50px);
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black; /* else it changes to purple*/
+}
+
+a:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+/* Formatting for the intro paragraph  */
+
+.div2 {
+  width: 450px;
+  border: 1px solid rgb(121, 118, 118);
+  background-color: rgba(144, 143, 143, 0.5);
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: fantasy;
+}
+
+/* Media Query for Tablet: 2 columns */
+
+@media (max-width: 868px) {
+  .div1 a {
+    flex: 0 0 calc(50% - 50px);
+  }
+}
+
+/* Media Query for Mobile: 1 column */
+
+@media (max-width: 580px) {
+  .div1 a {
+    flex: 0 0 calc(100% - 50px);
+  }
+}
