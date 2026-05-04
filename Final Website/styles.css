@@ -1,0 +1,247 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Imported Google font and it's formatting for entire website */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+/* Background Color */
+
+body {
+  background-color: rgb(25, 25, 25);
+}
+
+/*  Code for Nav Bar for all Pages */
+
+.logoImage {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0.5px 0.5px 5px gray;
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* left vs right */
+  align-items: center; /* vertical alignment */
+  padding: 10px;
+}
+
+/* Left-aligned page link (logo + HOME) */
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.nav-left a {
+  font-weight: 500;
+  font-size: x-large;
+}
+
+/* Right-aligned page links */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Keep links inline */
+
+li {
+  display: inline;
+  margin: 10px;
+}
+
+/* Code for Fixed Nav Bar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* keeps it above everything */
+  background: rgb(25, 25, 25); /* Color so that content doesn't show through */
+}
+
+/* Code below is to change the text color of page links for active or visited status or upon hover */
+
+a:link {
+  color: rgb(252, 186, 3);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 255, 255);
+}
+a:hover {
+  color: rgb(255, 83, 3);
+  text-decoration: underline;
+}
+
+/* Header Footer Formatting */
+
+header {
+  height: 100px;
+  width: 100%;
+  background: rgb(25, 25, 25);
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  margin-left: 35px;
+  background: rgb(25, 25, 25);
+  font-size: small;
+}
+
+/* Page Heading */
+
+h1 {
+  text-align: left;
+  font-size: large;
+  font-weight: 500;
+  color: rgb(216, 213, 202);
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* Formatting for Images 1 to make it centered on the page by using the following settings for display, margin, drop-shadow, and size (width different for different screen sizes):
+
+display: block;
+margin: auto;
+box-shadow: 5px 5px 5px 5px #777777;
+Overall image size: 600px for regular screen size, media queries at 400px for iPad, and 250px for mobile  */
+
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 3px 3px 2px black;
+}
+
+/* Images Div */
+
+.div1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 25px;
+}
+
+.div1 a {
+  flex: 0 0 calc(30% - 50px);
+}
+
+/* Formatting for the intro paragraph  */
+
+.div2 {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  text-align: left;
+}
+
+p {
+  color: rgb(204, 200, 200);
+  font-weight: lighter;
+  margin-left: 25px;
+  margin-right: 40px;
+}
+
+.div3 {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 30%;
+  text-align: left;
+}
+
+.butterflyImage {
+  width: 350px;
+  height: 350px;
+  margin-left: 20%;
+}
+
+/* Google Slideshow Formatting */
+
+.slides-container {
+  width: 82%;
+  margin: 0 auto;
+  aspect-ratio: 14 / 9; /* keeps slides correct shape */
+}
+
+.slides-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Media Query for Tablet: 2 columns */
+
+@media (max-width: 768px) {
+  .nav-left a {
+    font-size: medium;
+  }
+
+  .nav-right {
+    font-size: small;
+  }
+  .div1 a {
+    flex: 0 0 calc(50% - 50px);
+  }
+
+  .div3 {
+    margin-right: 5%;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .butterflyImage {
+    width: 200px;
+    height: 200px;
+    margin-left: 30%;
+  }
+}
+
+/* Media Query for Mobile: 1 column */
+
+@media (max-width: 480px) {
+  .nav-left a {
+    font-size: small;
+  }
+
+  nav {
+    font-size: small;
+  }
+
+  h1 {
+    font-size: medium;
+  }
+
+  p {
+    font-size: small;
+  }
+
+  .div1 a {
+    flex: 0 0 calc(100% - 50px);
+  }
+
+  .butterflyImage {
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+  }
+}
